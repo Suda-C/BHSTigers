@@ -33,8 +33,14 @@ BHS Tigers is a mulitplatform application supporting IOS, Android, Web, MacOS, W
 /Documentation 
  - Full explanation of the mobile app with screenshots and videos for thorough walkthrough.
 
-## 
+## BULD INSTRUCTIONS
+This application is developed in Android Studio with the Flutter framework powered by the Dart programming language. Download and import to your IDE (Android Studio, Xcode, Visual Studio, etc.). Install the Flutter and Dart SDK. Choose your respective device (Web, Windows, MacOs, Linux, Android, IOS). Then "Run" or "Profile" the app by typing the command "Flutter run". 
 
+## DOWNLOADING & RUNNING
+ - MIN IOS 11.0
+ - MIN Android SDK 21
+ 
+## SOFTWARE & SERVICES 
 
 
 ## LICENSE
