@@ -1,0 +1,888 @@
+class EC {
+  final String title;
+  final String urlImage;
+  final String email;
+  final String tryoutDate;
+  final String grade;
+  final String sponsor;
+
+  const EC({
+    required this.title,
+    required this.urlImage,
+    required this.email,
+    required this.grade,
+    required this.tryoutDate,
+    required this.sponsor,
+
+  });
+}
+
+const sports = [
+  EC(
+    title: 'Example',
+    sponsor: 'Chandra Suda',
+    grade: "9-12th",
+    tryoutDate: 'June',
+    email: "kiran1234c@gmail.com",
+    urlImage: 'https://www.fbla-pbl.org/media/2021/07/Flag-color-1.png',
+  ),
+  EC(
+    title: '9th Basketball Boys',
+    sponsor: 'Blake Short',
+    grade: "9th",
+    tryoutDate: 'Week of March 16',
+    email: "bshort@bentonvillek12.org",
+    urlImage: 'https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80',
+  ),
+  EC (
+    title: '9th Basketball Girls',
+    sponsor: 'Holly Treat',
+    grade: '9th',
+    tryoutDate: 'Week of March 16',
+    email: 'htreat@bentonvillek12.org',
+    urlImage: 'https://swac.org/images/2022/1/24/MBB_92014.jpg?width=1440&quality=80%',
+  ),
+  EC (
+    title: '9th Cheer/Dance',
+    sponsor: 'Tracy Kaufman',
+    grade: '9th',
+    tryoutDate: 'March / April',
+    email: 'tkaufman@bentonvillek12.org',
+    urlImage: 'https://media.istockphoto.com/photos/cheerleader-megaphone-pom-poms-on-american-football-sidelines-usa-picture-id1339650129?b=1&k=20&m=1339650129&s=170667a&w=0&h=qdr4hSCevaZTcR6O4HwlWKr1Fd6b25LVs4VU4GkXrdg=',
+  ),
+  EC (
+    title: '9th Cross Country Boys',
+    sponsor: 'Michael Power',
+    grade: '9',
+    tryoutDate: 'Week of August 2',
+    email: 'mpower@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: '9th Cross Country Girls',
+    sponsor: 'Randy Ramaker',
+    grade: '9',
+    tryoutDate: 'May 15',
+    email: 'rramaker@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: '9th Football',
+    sponsor: 'Toma Whorton',
+    grade: '9',
+    tryoutDate: 'No Tryout',
+    email: 'twhorton@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: '9th Track Boys',
+    sponsor: 'Rod Washington',
+    grade: '9',
+    tryoutDate: 'Week of November 15',
+    email: 'rwashington@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: '9th Track Girls',
+    sponsor: 'Marshall Starr',
+    grade: '9',
+    tryoutDate: 'Week of November 15',
+    email: 'marstarr@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: '9th Volleyball',
+    sponsor: 'Rob Barnes',
+    grade: '9',
+    tryoutDate: 'Mid-April',
+    email: 'rbarnes@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Bowling',
+    sponsor: 'Tony Cherico',
+    grade: '9-12',
+    tryoutDate: 'Week of November 1',
+    email: 'tcherico@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Boys Soccer',
+    sponsor: 'Mike Devaney',
+    grade: '9-12',
+    tryoutDate: 'October',
+    email: 'mdevaney@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Dance',
+    sponsor: 'Tracy Kaufman',
+    grade: '9-12',
+    tryoutDate: 'March/April',
+    email: 'tkaufman@bentonvillek12.org',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Golf Boys & Girls',
+    sponsor: 'KEarly / LDavis',
+    grade: '9-12',
+    tryoutDate: 'May',
+    email: 'ldavis@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Soccer Girls',
+    sponsor: 'Steven Porter',
+    grade: '9-12',
+    tryoutDate: 'May',
+    email: 'sporter@bentonvillek12,org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Softball',
+    sponsor: 'Kent Early',
+    grade: '9-12',
+    tryoutDate: 'Week of August 2',
+    email: 'kearly@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Swim / Dive',
+    sponsor: 'Liz Braun',
+    grade: '9-12',
+    tryoutDate: 'Week of September 7',
+    email: 'ebraun@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Tennis',
+    sponsor: 'Emily Dillard',
+    grade: '9-12',
+    tryoutDate: 'May',
+    email: 'edillard@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Wrestling',
+    sponsor: 'Jason Adams',
+    grade: '9-12',
+    tryoutDate: 'May',
+    email: 'jadams@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Baseball',
+    sponsor: 'Todd Abbott',
+    grade: '9-12',
+    tryoutDate: 'July',
+    email: 'tabbott@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Basketball Boys',
+    sponsor: 'Richard Rippee',
+    grade: '10-12',
+    tryoutDate: 'April 18',
+    email: 'rrippee@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Basketball Girls',
+    sponsor: 'Tom Halbmaier',
+    grade: '10-12',
+    tryoutDate: 'Week of May 10',
+    email: 'thalbmaier@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Cheer',
+    sponsor: 'Tracy Kaufman',
+    grade: '10-12',
+    tryoutDate: 'March/April',
+    email: 'tkaufman@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Cross Country Boys',
+    sponsor: 'Michael Power',
+    grade: '10-12',
+    tryoutDate: 'Week of August 2',
+    email: 'mpower@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Cross Country Girls',
+    sponsor: 'Randy Ramaker',
+    grade: '9-12',
+    tryoutDate: 'Week of August 2',
+    email: 'rramaker@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Football',
+    sponsor: 'Jody Grant',
+    grade: '10-12',
+    tryoutDate: 'December',
+    email: 'jgrant@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Track Boys',
+    sponsor: 'Michael Power',
+    grade: '10-12',
+    tryoutDate: 'Week of November 15',
+    email: 'mpower@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Track Girls',
+    sponsor: 'Randy Ramaker',
+    grade: '10-12',
+    tryoutDate: 'Week of November 15',
+    email: 'rramaker@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Volleyball',
+    sponsor: 'Michelle Smith',
+    grade: '10-12',
+    tryoutDate: 'Week of April 12',
+    email: 'mismith@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Choir-General',
+    sponsor: 'Terry Hicks',
+    grade: '10-12',
+    tryoutDate: 'January / February',
+    email: 'thicks@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Choir-Chamber',
+    sponsor: 'Terry Hicks',
+    grade: '11-12',
+    tryoutDate: 'March',
+    email: 'thicks@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Choir-9th General',
+    sponsor: 'Ken Griggs',
+    grade: '9',
+    tryoutDate: 'Late March',
+    email: 'kgriggs@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Marching Band',
+    sponsor: 'Tim Hendrix',
+    grade: '9-12',
+    tryoutDate: 'April 22-26; Tues/Thur in April',
+    email: 'thendrix@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Color Guard',
+    sponsor: 'Kelsey Lunberg',
+    grade: '9-12',
+    tryoutDate: 'April 23-27',
+    email: 'klunberg@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Concert Band',
+    sponsor: 'Tim Hendrix',
+    grade: '9-12',
+    tryoutDate: 'Week of May 4th',
+    email: 'thendrix@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Orchestra',
+    sponsor: 'Jesse Collett',
+    grade: '9-12',
+    tryoutDate: 'April 1st',
+    email: 'jcollett@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'ACT Summer Academies',
+    sponsor: 'James Kelly Davis',
+    grade: '9-12',
+    tryoutDate: 'Spring Signup for June / July',
+    email: 'jamdavis@bentonvillek12.org',
+    urlImage: '',
+  ),
+  EC (
+    title: 'eSports',
+    sponsor: 'GCollier / JLangham',
+    grade: '9-12',
+    tryoutDate: '9-12',
+    email: '9-12',
+    urlImage: '',
+  )
+];
+
+const clubs = [
+
+
+  EC (
+    title: 'Astronomers of AR',
+    sponsor: 'Harrison Kerr',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: 'https://assets3.thrillist.com/v1/image/2869853/1584x1056/scale;webp=auto;jpeg_quality=60;progressive.jpg',
+  ),
+
+  EC (
+    title: 'Athletic Training',
+    sponsor: 'Rick Ternes & Drew Bombardiere',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: 'https://ih1.redbubble.net/image.1001004959.1169/st,small,507x507-pad,600x600,f8f8f8.jpg',
+  ),
+
+  EC (
+    title: 'Aviation Club',
+    sponsor: 'Chris Rousey',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAzQCtNJdWhezgd5BBzma4RwOq6sJNhMMUxdntIraJrjgf3kYZoYqnQ79IK-M9y_5Sd4o&usqp=CAU',
+  ),
+
+  EC (
+    title: "Arkansas Children's Hospital Club",
+    sponsor: 'Elizabeth Skinner',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: 'https://www.kark.com/wp-content/uploads/sites/85/2017/05/arkansas20children27s20hospital20logo_1494885743243_21505725_ver1.0.jpg?w=720&h=405&crop=1',
+  ),
+
+  EC (
+    title: 'AR Governor’s Quiz Bowl',
+    sponsor: 'Heather Gross & Donald Payne',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: 'https://www.myarkansaspbs.org/__data/assets/image/0007/172366/varieties/thumbnail.jpg',
+  ),
+
+  EC (
+    title: 'BHS Film Club',
+    sponsor: 'Joe Dungan',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Black Student Union',
+    sponsor: 'Julie Griggs',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Body Improvement Club',
+    sponsor: 'Joe Wilson',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Chem Club',
+    sponsor: 'Steven Kitchens',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Chess Club',
+    sponsor: 'Todd Brown',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Chinese Club',
+    sponsor: 'Qiuye Ma',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Computer Science Honor Society',
+    sponsor: 'Maud King',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Coding Club',
+    sponsor: 'Chris Olsen',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Girls Who Code',
+    sponsor: 'Maud King',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'DECA',
+    sponsor: 'Michelle Lewis',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Educators Rising',
+    sponsor: 'Brenda Lumpkin',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Emerging Technologies Club',
+    sponsor: 'Brian McKean',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Environmental Action Club',
+    sponsor: 'Rachael Evans',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'E-Sports',
+    sponsor: 'Gentry Collier & Josh Lanham',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'FCCLA',
+    sponsor: 'Aubrey Patterson',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'FCA',
+    sponsor: 'Leah Laramore & Seth French',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Feminism Club',
+    sponsor: 'Madison Barnes',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'FFA',
+    sponsor: 'Courtney Bradley',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'French Club',
+    sponsor: 'Celine Simpson',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'French Honors Society',
+    sponsor: 'Celine Simpson',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'FBLA',
+    sponsor: 'Carrie Penner',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Government Action Club',
+    sponsor: 'Alison Vowell',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Harmonies for Humanity',
+    sponsor: 'Lindsey Maize',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'HOSA',
+    sponsor: 'Ana Mizelle',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Indian Student Association',
+    sponsor: 'Lyndsey Randall',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+];
+
+const clubs2 = [
+  EC (
+    title: 'Interact Club',
+    sponsor: 'Susan Brock',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: 'https://cdn.vectorstock.com/i/1000x1000/91/73/interact-vector-6159173.webp',
+  ),
+  EC (
+    title: 'Thespian Club',
+    sponsor: 'International Thespian Club',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: 'https://images.squarespace-cdn.com/content/v1/5bc4f999af4683cbdf148030/1611789672701-78HYOR27CMXH9TLXG1OB/Thespian+Logo.png',
+  ),
+  EC (
+    title: 'Just Serve Club',
+    sponsor: 'Aubrey Patterson',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: 'https://transformtheglobecom.files.wordpress.com/2019/06/leadership-lessons-from-serving-community.jpg',
+  ),
+  EC (
+    title: 'Key Club',
+    sponsor: 'Melanie Golleher',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Mock Trial Team',
+    sponsor: 'Sarah Preston',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Mountain Biking Team',
+    sponsor: 'Jeff Pierce',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Mu Alpha Theta',
+    sponsor: 'Josh Bashaw',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Muslim Student Association',
+    sponsor: 'Felicia Jamell',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'National Forensics & Debate Team',
+    sponsor: 'Brandon Box-Higdem',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'National Honors Society',
+    sponsor: 'Donald Payne',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'National Technical Honors Society',
+    sponsor: 'Kelly Parker',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Outdoor Club',
+    sponsor: 'Michel Jones & Martin Salas',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Outreach for Christ',
+    sponsor: 'Traci Holland & Gretchen Lobik',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Photography Club',
+    sponsor: 'Michel Jones',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Podcast Club',
+    sponsor: 'Liz Knapp',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Prism',
+    sponsor: 'Matt Peoples',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Spanish Club',
+    sponsor: 'Audra Jurmanovich',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Student Council',
+    sponsor: 'Amy Davis & Jacob Hatfield',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Student to Student Mentoring',
+    sponsor: 'Justin Knapp & Liz Knapp',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+
+  EC (
+    title: 'TSA/Vex Robotics Club',
+    sponsor: 'Kelly Parker & Sandra Sandoval',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Theatre & Film Association',
+    sponsor: 'Matt Peoples',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Tiger Wishes',
+    sponsor: 'Holly Treat',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Trading & Investing Club',
+    sponsor: 'Donald Payne',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Trap Shooting Club',
+    sponsor: 'Chris Rousey',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Tri-M Honors',
+    sponsor: 'Terry Hicks',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Volleybros',
+    sponsor: 'Rob Barnes',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Young Democrats Club',
+    sponsor: 'Not Yet Determined',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+  EC (
+    title: 'Young Democratic Socialist',
+    sponsor: 'Hanna Faugh',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Young Historians Club',
+    sponsor: 'Ben Ring & Andrew McNeese',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Young Libertarians Club',
+    sponsor: 'Stacy Harris',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Young Life',
+    sponsor: 'Rob Barnes',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Young Republicans',
+    sponsor: 'Martin Salas',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+  EC (
+    title: 'Young Writers Club',
+    sponsor: 'Justin Wilkinson',
+    grade: '',
+    tryoutDate: '',
+    email: '',
+    urlImage: '',
+  ),
+
+];
