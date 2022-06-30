@@ -23,7 +23,6 @@ BHS Tigers is a mulitplatform application supporting IOS, Android, Web, MacOS, W
  - Bottom sheet notification to enhance user experiance. 
 
 ## FOLDER LAYOUT
-
 /CompiledApp
  - Signed APK for Android and Release Bundled for IOS
 
@@ -40,8 +39,31 @@ This application is developed in Android Studio with the Flutter framework power
  - MIN IOS 11.0
  - MIN Android SDK 21
  
-## SOFTWARE & SERVICES 
+## SOFTWARE, PACKAGES, & SERVICES 
+ - Credits Document: 
+ - get_storage: https://pub.dev/packages/get_storage
+ - flutter_native_timezone: https://pub.dev/packages/
+ - twitter_login: https://pub.dev/packages/twitter_login
+ - flutter_settings_screens: https://pub.dev/packages/flutter_settings_screens
+ - flutter_settings_ui: https://pub.dev/packages/flutter_settings_ui
+ - firebase_auth: ^3.3.20 https://pub.dev/packages/firebase_auth
+ - firebase_core: ^1.18.0 https://pub.dev/packages/firebase_core
+ - cloud_firestore: ^3.1.18 https://pub.dev/packages/cloud_firestore
+ - google_sign_in: ^5.3.3 https://pub.dev/packages/google_sign_in
+ - font_awesome_flutter: ^10.1.0 https://pub.dev/packages/font_awesome_flutter
+ - provider: ^5.0.0 https://pub.dev/packages/provider
+ - url_launcher: ^6.1.4 https://pub.dev/packages/url_launcher
+ - google_fonts: https://pub.dev/packages/google_fonts
+ - shared_preferences: https://pub.dev/packages/shared_preferences
+ - table_calendar: https://pub.dev/packages/table_calendar
+ - sqflite: https://pub.dev/packages/sqflite
+ - intl: https://pub.dev/packages/intl
 
+## References 
+ - “FBLA Competitive Events: Academic Competitions for High School Students” FBLA, https://www.fbla-pbl.org/fbla/competitive-events/
+ - Bentonville High School: https://www.bentonvillek12.org/Domain/306
+ - Bentonville Public Schools: https://bentonvillek12.org
+ - Bentonville Nutrislice Menu: https://bentonville.nutrislice.com/menu
 
 ## LICENSE
 
